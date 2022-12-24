@@ -2,7 +2,7 @@
 
 This Calendar is taken from: [React/Redux Developer Task - React Calender with Reminders](https://github.com/drydenwilliams/react-calendar)
 
-La funcionalidad del calendario es la misma detallada en el repositorio del author [drydenwilliams] (https://github.com/drydenwilliams).
+The functionality of the calendar is the same detailed in the author's repository [drydenwilliams](https://github.com/drydenwilliams).
 
 ### Installation
 
@@ -19,5 +19,5 @@ I need a calendar for a project, I certainly have some experience working with c
 - Change to [`CSS Modules`](https://keepcoding.io/blog/css-modules-en-react/)
 - Update to [`Redux Toolkit`](https://redux-toolkit.js.org/)
 - Change Class in Functional Components
-- Add [`classnames`] (https://github.com/JedWatson/classnames) as suggestion for [drydenwilliams] (https://github.com/drydenwilliams)
+- Add [`classnames`](https://github.com/JedWatson/classnames) as suggestion for [drydenwilliams](https://github.com/drydenwilliams)
 - Part of the commented code has been preserved, but I don't remember adding more comments 😄
