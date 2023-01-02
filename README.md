@@ -1,8 +1,8 @@
 # React Calendar
 
-This Calendar is taken from: [React/Redux Developer Task - React Calender with Reminders](https://github.com/drydenwilliams/react-calendar)
+Este Calendario fue tomado de: [React/Redux Developer Task - React Calender with Reminders](https://github.com/drydenwilliams/react-calendar)
 
-The functionality of the calendar is the same detailed in the author's repository [drydenwilliams](https://github.com/drydenwilliams).
+La funcionalidad del calendario hasta el momento se intentado que sea la misma que en el repositorio del author [drydenwilliams](https://github.com/drydenwilliams), debido a que aun no he ajustado los recordatorios, aunque si he añadido un calendario semanal.
 
 ### Installation
 
@@ -14,10 +14,12 @@ yarn start // http://localhost:3000/
 
 ### Comments
 
-I need a calendar for a project, I certainly have some experience working with calendars in VBA, but it's not the same and I don't think I've worked cleanly back then. I found this project and it's really cool, I did some minimal updates.
+Necesito un calendario para un proyecto, ciertamente tengo algo de experiencia trabajando con calendarios en VBA, pero en esa epoca no era igual 😛, y no fue desarrollado tan limpiamente como lo intento ahora. Me he encontrado con este proyecto ya iniciado, realmente esta genial y me ayudo de mucho.
 
-- Change to [`CSS Modules`](https://keepcoding.io/blog/css-modules-en-react/)
-- Update to [`Redux Toolkit`](https://redux-toolkit.js.org/)
-- Change Class in Functional Components
-- Add [`classnames`](https://github.com/JedWatson/classnames) as suggestion for [drydenwilliams](https://github.com/drydenwilliams)
-- Part of the commented code has been preserved, but I don't remember adding more comments 😄
+- Añadi [`CSS Modules`](https://keepcoding.io/blog/css-modules-en-react/)
+- Actualice a [`Redux Toolkit`](https://redux-toolkit.js.org/)
+- Cambie los componentes de clases por componentes funcionales
+- Agregue [`Typescript`](https://www.typescriptlang.org/)
+- Inclui [`classnames`] (https://github.com/JedWatson/classnames) fue tambien sugerencia del autor original [drydenwilliams](https://github.com/drydenwilliams)
+- Preserve parte de los comentarios originales o eso creo, bueno no recuerdo si añadi más comentarios al proyecto 😄
+- Arregle el error que no permitia renderizar el mes de diciembre
