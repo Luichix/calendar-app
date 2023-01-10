@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0 0 0;
 }
 
 /** period */
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -93,4 +93,23 @@
   font-family: var(--font-family-roboto);
   padding: 0 1rem;
   color: #0f609b;
+}
+
+/** reminder */
+
+.reminder {
+  position: absolute;
+  left: 35px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: var(--color-primary-muted);
+  background-color: transparent;
+}
+
+.reminder:hover {
+  color: var(--color-primary);
 }
