@@ -1,5 +1,6 @@
 @import './minireset.css';
+@import './colors.css';
 
 .App {
-  padding: 2rem;
+  padding: 0 10%;
 }

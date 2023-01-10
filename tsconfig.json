@@ -14,7 +14,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+    "paths": {
+      "@Components/*": ["src/components/*"],
+      "@Contexts/*": ["src/contexts/*"],
+      "@Data/*": ["src/data/*"],
+      "@Hooks/*": ["src/hooks/*"],
+      "@Interfaces/*": ["src/interfaces/*"],
+      "@Redux/*": ["src/redux/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Services/*": ["src/services/*"],
+      "@Styles/*": ["src/styles/*"],
+      "@Utils/*": ["src/utils/*"],
+      "@Language/*": ["src/language/*"],
+      "@Libraries/*": ["src/libraries/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Assets/*": ["assets/*"]
+    } /* Specify a set of entries that re-map imports to additional lookup locations. */
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
