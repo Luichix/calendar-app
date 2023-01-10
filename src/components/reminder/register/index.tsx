@@ -1,15 +1,19 @@
-import { InputForm, FormValues, useInputForm } from '@Hooks/useInputForm'
-import dayjs from 'dayjs'
-import { TfiPencilAlt } from 'react-icons/tfi'
-import { IoIosTimer } from 'react-icons/io'
-import { RxPerson } from 'react-icons/rx'
-import { MdArrowForward, MdOutlineKeyboardArrowDown } from 'react-icons/md'
-import { useDispatch } from 'react-redux'
-import { addReminder } from '../../../redux/reminderSlice'
-import styles from './styles.module.css'
+import {
+  InputForm,
+  FormValues,
+  useInputForm,
+} from '../../../utils/useInputForm';
+import dayjs from 'dayjs';
+import { TfiPencilAlt } from 'react-icons/tfi';
+import { IoIosTimer } from 'react-icons/io';
+import { RxPerson } from 'react-icons/rx';
+import { MdArrowForward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
+import { addReminder } from '../../../redux/reminderSlice';
+import styles from './styles.module.css';
 
-const START_TIME = `${dayjs().format('HH')}:${dayjs().minute()}`
-const END_TIME = `${dayjs().add(1, 'hours').format('HH')}:${dayjs().minute()}`
+const START_TIME = `${dayjs().format('HH')}:${dayjs().minute()}`;
+const END_TIME = `${dayjs().add(1, 'hours').format('HH')}:${dayjs().minute()}`;
 
 const initialState: InputForm[] = [
   {
@@ -60,32 +64,32 @@ const initialState: InputForm[] = [
     placeholder: '',
     type: 'time',
   },
-]
+];
 
 function NewReminder() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const onSubmit = (values: FormValues) => {
     // obtener los datos del formulario
-    const { id, date, title, description } = values
+    const { id, date, title, description } = values;
     // crear el recordatorio y enviarlo a Redux
-    dispatch(addReminder({ id, date, title, description }))
-  }
+    dispatch(addReminder({ id, date, title, description }));
+  };
 
   const { handleSubmit, handleChange, inputs } = useInputForm(
     onSubmit,
     initialState
-  )
+  );
 
-  const timeOptions: Record<string, string>[] = []
+  const timeOptions: Record<string, string>[] = [];
   for (let i = 0; i < 24; i++) {
     for (let j = 0; j < 4; j++) {
-      const hour = i.toString().padStart(2, '0')
-      const minute = (j * 15).toString().padStart(2, '0')
+      const hour = i.toString().padStart(2, '0');
+      const minute = (j * 15).toString().padStart(2, '0');
       timeOptions.push({
         value: `${hour}:${minute}`,
         label: `${hour}:${minute}`,
-      })
+      });
     }
   }
 
@@ -105,7 +109,7 @@ function NewReminder() {
                   placeholder={input.placeholder}
                   className={styles.inputText}
                 />
-              )
+              );
             case 'date':
               return (
                 <input
@@ -117,7 +121,7 @@ function NewReminder() {
                   placeholder={input.placeholder}
                   className={styles.inputDate}
                 />
-              )
+              );
             case 'textarea':
               return (
                 <textarea
@@ -128,7 +132,7 @@ function NewReminder() {
                   placeholder={input.placeholder}
                   className={styles.textarea}
                 />
-              )
+              );
             case 'time':
               return (
                 <label key={input.id} className={styles.label}>
@@ -157,9 +161,9 @@ function NewReminder() {
                     <MdOutlineKeyboardArrowDown className={styles.arrow} />
                   </div>
                 </label>
-              )
+              );
             default:
-              return null
+              return null;
           }
         })}
         <RxPerson className={styles.iconPerson} />
@@ -173,7 +177,7 @@ function NewReminder() {
         </div>
       </form>
     </div>
-  )
+  );
 }
 
-export default NewReminder
+export default NewReminder;
