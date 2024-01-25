@@ -1,25 +1,56 @@
-# React Calendar
+# Calendar App 📅
 
-Este Calendario fue tomado de: [React/Redux Developer Task - React Calender with Reminders](https://github.com/drydenwilliams/react-calendar)
+## Overview 📖
 
-La funcionalidad del calendario deberia ser la misma que en el repositorio del author [drydenwilliams](https://github.com/drydenwilliams), pero debido a que aun no he ajustado los recordatorios, no lo es aun. Por el momento he añadido un calendario semanal para compensar 😄.
+Calendar App is a project aimed at creating a weekly and monthly calendar.
 
-### Installation
+## Capturas de Pantalla / Demostración 🖼️
 
+- [Live Demo](https://calendar-app-eosin.vercel.app/)
+- [Screenshot](/public/screenshot.png)
+
+## Technologies Used 🚀
+
+- React
+- Redux Toolkit
+- Vite
+- TypeScript
+- Dayjs
+
+## Installation 🛠️
+
+The project can be set up using yarn:
+
+```bash
+yarn install
 ```
-yarn
 
-yarn start // http://localhost:3000/
+## Usage 🚀
+
+To start the application:
+
+```bash
+yarn dev
 ```
 
-### Comments
+## Project Status 🚧
 
-Necesitaba un calendario para un proyecto, ciertamente tengo algo de experiencia trabajando con calendarios, aunque es con VBA, no es igual 😛, además no fue diseñado tan limpiamente como lo intento ahora. Me he encontrado con este proyecto ya iniciado, realmente esta genial y me ayudo de mucho.
+This calendar app is inspired by the "React/Redux Developer Task - React Calendar with Reminders" project by the author [drydenwilliams](https://github.com/drydenwilliams). While the functionality is intended to be the same, reminders are not yet implemented. Currently, a weekly calendar has been added as a substitute. The project is considered completed.
 
-- Añadi [`CSS Modules`](https://keepcoding.io/blog/css-modules-en-react/)
-- Actualice a [`Redux Toolkit`](https://redux-toolkit.js.org/)
-- Cambie los componentes de clases por componentes funcionales
-- Agregue [`Typescript`](https://www.typescriptlang.org/)
-- Inclui [`classnames`](https://github.com/JedWatson/classnames) fue tambien sugerencia del autor original [drydenwilliams](https://github.com/drydenwilliams)
-- Preserve parte de los comentarios originales o eso creo, bueno no recuerdo si añadi más comentarios al proyecto 😄
-- Arregle el error que no permitia renderizar el mes de diciembre
+## Notes 📝
+
+- Added CSS Modules to improve style management.
+- Updated to Redux Toolkit for more efficient state management.
+- Changed class components to functional components to adopt modern practices.
+- Introduced TypeScript for improved code integrity and scalability.
+- Included the `classnames` library as suggested by the original author [drydenwilliams](https://github.com/drydenwilliams).
+- Preserved part of the original comments and added some based on my own documentation (perhaps I also added more comments, but I'm not sure! 😄).
+- Fixed the error that prevented rendering the month of December.
+
+## License ⚖️
+
+This project is distributed under the MIT License.
+
+### Note
+
+This calendar project is based on the "React/Redux Developer Task - React Calendar with Reminders" by [drydenwilliams](https://github.com/drydenwilliams). The intended functionality aligns with the original project, but reminders are not yet implemented.
