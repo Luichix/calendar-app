@@ -4,11 +4,11 @@
 
 Calendar App is a project aimed at creating a weekly and monthly calendar.
 
-## Capturas de Pantalla / Demostración 🖼️
+## Application Link
 
-- [Live Demo](https://calendar-app-eosin.vercel.app/)
+[Live Demo](https://calendar-app-eosin.vercel.app/)
 
-![Screenshot](/public/screenshot.png)
+[Screenshot](/public/screenshot.png)
 
 ## Technologies Used 🚀
 
